@@ -228,7 +228,7 @@ summary {
   bottom: -10px;
   width: 500px;
   height: 70px;
-  background-image: url(../../images/main/imgRuler.png);
+  background-image: url(./images/main/imgRuler.png);
   background-repeat: no-repeat;
 }
 .form__title {
@@ -345,7 +345,7 @@ summary {
   display: none;
   width: 56px;
   height: 35px;
-  background: url(../../images/header/burger.svg) no-repeat #ffffff;
+  background: url(./images/header/burger.svg) no-repeat #ffffff;
   background-size: cover;
 }
 
@@ -372,7 +372,7 @@ summary {
 }
 .main {
   padding: 70px 0;
-  background: url(../../images/main/imgMain.jpg) no-repeat #ffffff;
+  background: url(./images/main/imgMain.jpg) no-repeat #ffffff;
   background-size: cover;
 }
 .main__content {
@@ -451,19 +451,19 @@ summary {
   cursor: pointer;
 }
 .services__bcg-window {
-  background: url(../images/services/imgWindow.jpg) no-repeat #ffffff;
+  background: url(./images/services/imgWindow.jpg) no-repeat #ffffff;
   background-size: cover;
 }
 .services__bcg-balcony {
-  background: url(../images/services/imgBalcony.jpg) no-repeat #ffffff;
+  background: url(./images/services/imgBalcony.jpg) no-repeat #ffffff;
   background-size: cover;
 }
 .services__bcg-cottages {
-  background: url(../images/services/imgCottages.jpg) no-repeat #ffffff;
+  background: url(./images/services/imgCottages.jpg) no-repeat #ffffff;
   background-size: cover;
 }
 .services__bcg-building {
-  background: url(../images/services/imgBuilding.jpg) no-repeat #ffffff;
+  background: url(./images/services/imgBuilding.jpg) no-repeat #ffffff;
   background-size: cover;
 }
 .services__card-top {
