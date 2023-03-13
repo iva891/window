@@ -1,0 +1,142 @@
+.about {
+    &__title {
+        margin-bottom: 55px;
+    }
+
+    &__inner {
+        margin-bottom: 70px;
+        background-color: $white;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+
+    &__inner-left {
+        padding: 46px 0 65px;
+    }
+
+    &__logo {
+        width: 198px;
+        height: auto;
+        margin: 0 0 60px 50px;
+    }
+
+    &__desc {
+        max-width: 301px;
+        margin: 0 52px 0 250px;
+        line-height: 22px;
+    }
+
+    &__inner-right {
+        width: 595px;
+        // overflow: hidden;
+    }
+
+    &__img {
+        height: 100%;
+    }
+
+    &__icon {
+        margin-right: 24px;
+    }
+
+    &__tab {
+        margin-bottom: 25px;
+        gap: 15px;
+    }
+
+    &__btn {                
+        margin: 65px auto 23px;
+    }
+}
+
+.tab {
+
+    &__list {
+        margin-right: 10px;
+    }
+
+    &__link {
+        padding: 8px 25px;
+        font-size: 18px;
+        transition: all 0.4s ease;
+
+        &:hover {
+            color: $white;
+            background-color: $orange;
+            border-radius: 3px;
+            box-shadow: 0px 6px 11px -2px $black-shadow;
+        }
+    }
+}
+
+.advantages {
+    gap: 105px 0;
+
+    @media (min-width: 360px) and (max-width: 842px) {
+        justify-content: center;
+    }
+    
+    &__wrap {
+        display: flex;
+        width: 400px;
+    }
+    
+    &__inner {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: 130px;
+    }
+    
+    &__content {
+        padding-left: 22px;
+        max-width: 250px;
+    }
+    
+    &__title {
+        margin-bottom: 14px;
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+    }
+    
+    &__desc {
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 992px) {    
+    .about {    
+        &__logo {
+            margin-left: 28px;
+        }
+    
+        &__desc {
+            margin-left: 104px;
+            max-width: 277px;
+        }    
+
+        &__inner-right {
+            width: 447px;
+        }
+    }
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+    .about {    
+        &__inner-right {
+            display: none;
+        }
+    }
+}
+@media (min-width: 501px) and (max-width: 890px) {
+    .about {    
+        &__inner-right {
+            width: 100%;
+        }
+
+        &__img {
+            width: 100%;
+        }
+    }
+}

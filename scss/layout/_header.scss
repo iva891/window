@@ -1,0 +1,85 @@
+.header {
+    padding: 17px 0;
+    background-color: $white;
+
+    //Пока что не надо
+    // &_fixed {        
+    //     position: fixed;
+    //     left: 0;
+    //     top: 0;
+    //     width: 100%;
+    //     z-index: 99;
+    // }
+
+    &__logo {
+        width: 90px;
+        height: 63px;
+    } 
+
+    &__buttons {
+        gap: 0 14px;
+        @media (min-width: 993px) and (max-width: 1199px) {
+            margin-left: auto;
+        }
+    }
+
+    &__btn {
+        &_blue {
+            background-color: $blue-btn;
+        }
+    }
+}
+
+.panel {    
+    &__item {
+        gap: 0 33px;
+    }
+
+    &__link {
+        transition: all 0.4s ease;
+        
+        &:hover {
+            color: $orange;
+        }
+    }
+}
+
+.burger {
+    display: none;
+    width: 56px;
+    height: 35px;
+    
+    background: url(../../images/header/burger.svg) no-repeat $white;
+    background-size: cover;
+}
+
+@media (max-width: 992px) {
+    .header {
+        &__logo {
+            width: 106px;
+            height: 71px;
+            margin-right: 308px;
+        } 
+
+        &__buttons {
+            gap: 0 16px;
+        }
+    }
+
+    .panel {    
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+
+@media (min-width: 360px) and (max-width: 890px) {
+    .header {
+        &__logo {
+            margin-right: 10px;
+        } 
+    }
+}

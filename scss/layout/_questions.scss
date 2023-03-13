@@ -1,0 +1,85 @@
+.questions {
+  padding: 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    background-color: $orange;
+    border-radius: 7px;
+    padding: 40px 101px 63px;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+    color: $white;
+  }
+
+}
+
+.accordion {
+  color: $blue;
+  background-color: $white;
+  border-radius: 3px;
+
+  &[open] .accordion__header::after {
+    transform: rotate(-180deg);
+  }
+
+  &__item {
+    transition: all .4s ease;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  &__header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px 30px 19px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 700;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 30px;
+      width: 28px;
+      height: 17px;
+      background-image: url("/images/questions/arow.svg");
+      background-repeat: no-repeat;
+      background-size: 28px;
+    }
+  }
+
+  &__span {
+    margin-right: 30px;
+  }
+
+  &__body {
+    padding: 0 0 38px 19px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $black;
+    background: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 992px) {
+  .questions {
+    padding: 0;
+
+    &__container {
+      padding: 40px 40px 63px;
+    }
+  }
+}

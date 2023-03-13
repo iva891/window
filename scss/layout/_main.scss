@@ -1,0 +1,58 @@
+.main {
+    padding: 70px 0;
+    background: url(../../images/main/imgMain.jpg) no-repeat $white;
+    background-size: cover;
+    &__content {
+        color: $white;
+    }
+
+    &__title {
+        max-width: 470px;
+        margin-bottom: 40px;
+        margin-left: 14px;
+    }
+
+    &__title-min {
+        display: block;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: $orange;
+    }
+
+    &__advantages {
+        gap: 35px;
+        
+        @media (min-width: 993px) and (max-width: 1199px) {
+            justify-content: flex-start;
+        }
+    }
+
+    &__wrap {
+        width: 176px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+        height: 83px;
+        margin-bottom: 20px;
+    }
+
+    &__desc {
+        font-size: 14px;
+        &_ml {
+            margin-left: 14px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .main {
+        &__title {
+            margin-left: 0;
+        }
+    }
+}

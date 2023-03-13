@@ -1,0 +1,37 @@
+.btn {
+    font-weight: 700;
+    color: $white;
+    background-color: $orange;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0px 6px 11px -2px $black-shadow;
+    }    
+
+    &__text {
+        margin-left: 13px;
+    }
+
+    &_header {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 20px;
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    &_about {
+        padding: 17px 30px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &_form {
+        width: auto;
+        padding: 19px 40px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}

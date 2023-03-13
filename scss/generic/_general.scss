@@ -1,0 +1,143 @@
+body {
+    position: relative;
+    // Для фикс шапки (пока не надо)
+    // padding-top: 101px;
+    font-family: $Roboto;
+    background-color: $grey;
+    color: $blue;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+h2, h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+a {
+    color: $black;
+    transition: all 0.4s ease;
+    &:hover {
+        color: $orange;
+    }
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+input {
+    display: block;
+    width: 100%;
+}
+
+section {
+    padding: 65px 0 0;
+}
+
+summary {
+    border: none;
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (min-width: 360px) and (max-width: 843px) {
+        width: 95%;
+    }
+    @media (min-width: 843px) and (max-width: 890px) {
+        width: 95%;
+    }
+    @media (max-width: 992px) {
+        max-width: 886px;
+    }
+    @media (min-width: 993px) and (max-width: 1199px) {
+        width: 95%;
+    }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &_gap {
+        gap: 52px;
+    }
+
+    @media (max-width: 992px) {
+        &_between {
+            justify-content: space-between;
+        }
+    }
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrap-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap-between {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+    @media (max-width: 992px) {
+        justify-content: center;
+    }
+
+    @media (min-width: 993px) and (max-width: 1199px) {
+        justify-content: center;
+    }
+}
+
+.wrap-between-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrap-between-start {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.visualy-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
